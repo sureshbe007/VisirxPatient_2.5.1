@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+<com.visirx.patient.customview.MediumFont
+    android:id="@+id/info_heading"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_visirx"
+    android:contentDescription="@string/app_name"
+    android:gravity="left"
+    android:padding="10sp"
+    android:paddingBottom="@dimen/alert_head_bottom"
+    android:paddingLeft="@dimen/alert_head_left"
+    android:paddingTop="@dimen/alert_head_top"
+    android:text="@string/user_alert"
+    android:textColor="@color/White"/>
+
+<com.visirx.patient.customview.NormalFont
+    android:id="@+id/intfo_message"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/alert_dialog"
+    android:layout_margin="10dp"
+    android:paddingBottom="@dimen/des_head_bottom"
+    android:paddingLeft="@dimen/des_head_left"
+    android:paddingTop="@dimen/des_head_top"
+    android:text=""/>
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="right"
+    android:layout_marginRight="@dimen/layout_margin_right"
+    android:paddingBottom="20dp">
+
+    <Button
+        android:id="@+id/info_positive"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginRight="@dimen/yes_margin_right"
+        android:background="@color/background_visirx"
+        android:text=""
+        android:textColor="@color/White"/>
+</LinearLayout>
+</LinearLayout>

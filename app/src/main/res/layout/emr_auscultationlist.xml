@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/grid_border"
+        android:paddingLeft="@dimen/margin_low"
+        android:paddingRight="@dimen/margin_low"
+        android:paddingBottom="@dimen/margin_low"
+        android:paddingTop="@dimen/margin_high">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/play"
+            android:layout_gravity="center"
+            android:id="@+id/imgplay" />
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/margin_low"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.visirx.patient.customview.NormalFont
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_alignParentTop="true"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/size_normal"
+                android:id="@+id/lblAusName" />
+
+            <com.visirx.patient.customview.NormalFont
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_alignParentRight="true"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/size_normal"
+                android:id="@+id/lblAusDate" />
+
+            <com.visirx.patient.customview.NormalFont
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/lblAusName"
+                android:textColor="@color/mediumgrey"
+                android:textSize="@dimen/size_normal"
+                android:layout_alignParentRight="true"
+                android:text=""
+                android:id="@+id/lblAusSec" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

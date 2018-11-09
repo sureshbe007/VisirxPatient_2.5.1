@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.visirx.patient.activity.BookAppointment">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="com.visirx.patient.activity.BookAppointment"
+        tools:showIn="@layout/activity_book_appointment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/margin_medium"
+                    android:paddingRight="@dimen/margin_medium"
+                    android:paddingTop="@dimen/margin_medium">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/explain_symptoms"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <ImageButton
+                        android:id="@+id/imgbtnAddFiles"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_attach" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/margin_medium"
+                    android:paddingRight="@dimen/margin_medium">
+
+                    <EditText
+                        android:id="@+id/editText"
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:background="@drawable/notes_edittext"
+                        android:gravity="top"
+                        android:hint="@string/symptom_hint"
+                        android:inputType="textMultiLine"
+                        android:lines="6"
+                        android:maxLines="16"
+                        android:minLines="5"
+                        android:padding="@dimen/margin_low"
+                        android:scrollbars="vertical"
+                        android:textSize="@dimen/text_size_large" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/margin_medium"
+                    android:paddingRight="@dimen/margin_medium"
+                    android:paddingTop="@dimen/margin_high">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_low"
+                        android:layout_weight="1"
+                        android:text="@string/select_mode"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/btnVertiual"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toLeftOf="@+id/btnValkin"
+                            android:background="@drawable/rbtn_selector"
+                            android:button="@null"
+                            android:checked="true"
+                            android:gravity="center"
+                            android:padding="@dimen/margin_low"
+                            android:text="@string/virtual"
+                            android:textColor="@drawable/rbtn_textcolor_selector" />
+
+                        <RadioButton
+                            android:id="@+id/btnValkin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rbtn_selector"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:padding="@dimen/margin_low"
+                            android:text="@string/walkin"
+                            android:textColor="@drawable/rbtn_textcolor_selector" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_low"
+                    android:background="@color/gray"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/margin_low">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="@string/backward"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_size_medium" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/today_date"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_size_medium" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="@string/forward"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_size_medium" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/margin_medium">
+
+
+                    <TextView
+                        android:id="@+id/lblTokennum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/circle"
+                        android:padding="@dimen/margin_medium"
+                        android:text="10"
+                        android:textColor="@android:color/white"
+                        android:textSize="32dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_low"
+                        android:text="@string/next_token"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/text_size_large" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true">
+
+                    <Button
+                        android:id="@+id/button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/colorPrimary"
+                        android:text="@string/proceed"
+                        android:textColor="@android:color/white" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,70 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <dimen name="fab_margin">30dp</dimen>
+
+
+    <dimen name="actionbar_header">43sp</dimen>
+    <dimen name="dashboard_top">76sp</dimen>
+    <dimen name="no_asps">189sp</dimen>
+    <dimen name="asps_text">38sp</dimen>
+    <dimen name="status_top">47sp</dimen>
+    <dimen name="card_padding">53sp</dimen>
+    <dimen name="name_txt">20sp</dimen>
+    <dimen name="sub_txt">18sp</dimen>
+    <dimen name="persion_image">100sp</dimen>
+    <dimen name="header_text">18sp</dimen>
+    <dimen name="content_txt">18sp</dimen>
+    <dimen name="persion_image_dashboard">75sp</dimen>
+    <dimen name="time_icon_dashboard">20sp</dimen>
+
+    // Doctor App Dimention
+
+    <dimen name="text_size_extralarge">18sp</dimen>
+    <dimen name="text_size_large">13sp</dimen>
+    <dimen name="text_size_medium">13sp</dimen>
+    <dimen name="text_size_small">11sp</dimen>
+    <dimen name="text_size_tiny">10sp</dimen>
+    <dimen name="margin_high">20dp</dimen>
+    <dimen name="margin_medium">15dp</dimen>
+    <dimen name="margin_low">10dp</dimen>
+    <dimen name="margin_tiny">3dp</dimen>
+    <dimen name="margin_large">30dp</dimen>
+    <dimen name="margin_top">30dp</dimen>
+
+
+    <!--Cancel dialog -->
+    <dimen name="alert_head_top">14dp</dimen>
+    <dimen name="alert_head_left">16dp</dimen>
+    <dimen name="alert_head_bottom">1dp</dimen>
+
+    <dimen name="des_head_top">14dp</dimen>
+    <dimen name="des_head_left">14dp</dimen>
+    <dimen name="des_head_bottom">30dp</dimen>
+
+    <dimen name="layout_margin_right">20dp</dimen>
+    <dimen name="layout_padding_bottom">30dp</dimen>
+    <dimen name="layout_padding_top">30dp</dimen>
+    <dimen name="yes_margin_right">10dp</dimen>
+    <dimen name="no_margin_right">15dp</dimen>
+
+    <dimen name="size_medium">16sp</dimen>
+    <dimen name="size_normal">14sp</dimen>
+
+	
+	
+	
+	// QuickBlox
+	
+	
+	 <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="grid_item_divider">4dp</dimen>
+
+    <dimen name="image_button_size">@dimen/abc_action_button_min_height_material</dimen>
+    <dimen name="button_width">88dp</dimen>
+    <dimen name="button_height">48dp</dimen>
+
+    <integer name="users_count">10</integer>
+</resources>

@@ -1,0 +1,75 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme2" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <!--login logo margin-->
+    <style name="login_layout_margintop">
+        <item name="android:layout_marginTop">80dp</item>
+    </style>
+
+    <style name="login_layout">
+        <item name="android:layout_width">300dp</item>
+    </style>
+
+    <style name="signup_dob">
+        <item name="android:layout_width">300dp</item>
+    </style>
+
+    <style name="layout_assign">
+        <item name="android:layout_height">50dp</item>
+    </style>
+
+    <style name="profile_img">
+        <item name="android:layout_width">76dp</item>
+        <item name="android:layout_height">76dp</item>
+    </style>
+
+
+    <style name="FilePickerTheme" parent="NNF_BaseTheme">
+    <!-- Set these to match your theme -->
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorAccent">@color/colorAccent</item>
+    <!-- Need to set this also to style create folder dialog -->
+    <item name="alertDialogTheme">@style/FilePickerAlertDialogTheme</item>
+    </style>
+
+    <style name="FilePickerAlertDialogTheme" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+	
+	
+	 <!--<style name="AppTheme" parent="AppTheme.Base" />-->
+
+    <!-- Base application theme. -->
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light">
+    </style>
+
+    <style name="AppTheme.Button" parent="Widget.AppCompat.Button">
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+    </style>
+
+</resources>

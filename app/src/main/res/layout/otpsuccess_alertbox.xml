@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <com.visirx.patient.customview.MediumFont
+
+        android:id="@+id/alert_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:contentDescription="@string/app_name"
+        android:gravity="left"
+        android:padding="10sp"
+        android:paddingBottom="@dimen/alert_head_bottom"
+        android:paddingLeft="@dimen/alert_head_left"
+        android:paddingTop="@dimen/alert_head_top"
+        android:text="OTP SUCCESS"
+        android:textColor="@color/White"/>
+
+
+    <LinearLayout
+        android:id="@+id/Parent1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/addressParent1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.25"
+            android:orientation="vertical">
+
+            <com.visirx.patient.customview.NormalFont
+                android:id="@+id/appointmentID1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Otp validation is successful please login again"
+                android:textColor="@color/actionBarBackground"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/ViewLine"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/Parent1"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="15dp"
+        android:background="#c0c0c0"/>
+
+    <Button
+        android:id="@+id/ok"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/mybutton"
+        android:paddingBottom="2dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="2dp"
+        android:text="Ok"
+        android:textColor="@color/White"/>
+
+</LinearLayout>

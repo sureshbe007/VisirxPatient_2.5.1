@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    android:fitsSystemWindows="true"
+    tools:context="com.visirx.patient.dashboard_fragment">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="info.androidhive.materialtabs.fragments.FourFragment">
+
+        <ProgressBar
+            android:id="@+id/prescriptionProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+
+        <com.visirx.patient.customview.NormalFont
+            android:textSize="@dimen/size_normal"
+            android:id="@+id/prescriptionData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/prescriptionData"
+            android:textColor="@color/colorPrimary"
+            android:visibility="gone" />
+        <LinearLayout
+          android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/colorPrimaryDark"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/margin_low">
+
+            <com.visirx.patient.customview.NormalFont
+                android:id="@+id/appId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="APP ID"
+                android:textSize="@dimen/size_normal"
+                android:textColor="@android:color/white" />
+
+            <com.visirx.patient.customview.NormalFont
+                android:textSize="@dimen/size_normal"
+                android:id="@+id/appDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_low"
+                android:text="APP DATE"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <GridView
+                android:id="@+id/gridView_emrprescription"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:horizontalSpacing="8dp"
+                android:numColumns="2"
+                android:padding="@dimen/margin_tiny"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="8dp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>
+

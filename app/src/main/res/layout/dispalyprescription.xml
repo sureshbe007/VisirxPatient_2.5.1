@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="horizontal"
+    card_view:cardCornerRadius="5dp"
+    card_view:cardUseCompatPadding="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <com.visirx.patient.customview.NormalFont
+            android:id="@+id/card_position"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:weightSum="5">
+
+            <com.visirx.patient.customview.MediumFont
+
+                android:id="@+id/DrugName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Medicine Name"
+                android:textColor="@color/tripTableHeader"
+                android:textSize="13sp" />
+
+            <com.visirx.patient.customview.NormalFont
+                android:id="@+id/drugnamesss1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="drugnamesss"
+                android:textSize="13sp" />
+
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:weightSum="5">
+
+            <com.visirx.patient.customview.MediumFont
+                android:id="@+id/Dosage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="?attr/selectableItemBackground"
+                android:text="Route"
+                android:textColor="@color/tripTableHeader"
+                android:textSize="13sp" />
+
+            <com.visirx.patient.customview.NormalFont
+                android:id="@+id/dosagesss1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:background="?attr/selectableItemBackground"
+                android:text="dosagesss"
+                android:textSize="13sp" />
+
+
+        </TableRow>
+
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:weightSum="5">
+
+            <com.visirx.patient.customview.MediumFont
+                android:id="@+id/Timings"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="?attr/selectableItemBackground"
+                android:text="Peroid "
+                android:textColor="@color/tripTableHeader"
+                android:textSize="13sp" />
+
+            <com.visirx.patient.customview.NormalFont
+                android:id="@+id/timingsss"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.75"
+                android:background="?attr/selectableItemBackground"
+
+                android:text=""
+                android:textSize="13sp" />
+
+            <com.visirx.patient.customview.NormalFont
+                android:id="@+id/timingsss1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.75"
+                android:background="?attr/selectableItemBackground"
+                android:text=""
+                android:textSize="13sp" />
+
+            <com.visirx.patient.customview.NormalFont
+                android:id="@+id/timingsss2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="0.75"
+                android:background="?attr/selectableItemBackground"
+
+                android:text=""
+                android:textSize="13sp" />
+
+            <com.visirx.patient.customview.NormalFont
+                android:id="@+id/timingsss3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.75"
+                android:background="?attr/selectableItemBackground"
+                android:text=""
+                android:textSize="13sp" />
+
+
+        </TableRow>
+
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:weightSum="5">
+
+            <com.visirx.patient.customview.MediumFont
+                android:id="@+id/FoodType"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="?attr/selectableItemBackground"
+                android:text="Medicine Intake"
+                android:textColor="@color/tripTableHeader"
+                android:textSize="13sp" />
+
+            <com.visirx.patient.customview.NormalFont
+                android:id="@+id/foodtypesss1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:background="?attr/selectableItemBackground"
+                android:text="foodtypesss"
+                android:textSize="13sp" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:weightSum="5">
+
+            <com.visirx.patient.customview.MediumFont
+                android:id="@+id/tabletnumbers"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="?attr/selectableItemBackground"
+                android:text="Duration"
+                android:textColor="@color/tripTableHeader"
+                android:textSize="13sp" />
+
+            <com.visirx.patient.customview.NormalFont
+                android:id="@+id/tabletssss"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:background="?attr/selectableItemBackground"
+                android:text="tabletsss"
+                android:textSize="13sp" />
+
+
+        </TableRow>
+
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:weightSum="5">
+
+            <com.visirx.patient.customview.MediumFont
+                android:id="@+id/notes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="?attr/selectableItemBackground"
+                android:text="Notes"
+                android:textColor="@color/tripTableHeader"
+                android:textSize="13sp" />
+
+            <com.visirx.patient.customview.NormalFont
+                android:id="@+id/notesss"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:background="?attr/selectableItemBackground"
+                android:gravity="left"
+                android:text="notesss"
+                android:textSize="13sp" />
+
+        </TableRow>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp">
+
+            <com.visirx.patient.customview.MediumFont
+                android:id="@+id/hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:textColor="@color/tripTableHeader"
+                android:text="(*)-"
+                android:textSize="10sp" />
+
+            <com.visirx.patient.customview.NormalFont
+                android:id="@+id/mor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="?attr/selectableItemBackground"
+                android:gravity="left"
+                android:text="M-Morning"
+                android:textSize="10sp" />
+
+            <com.visirx.patient.customview.NormalFont
+                android:id="@+id/after"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="?attr/selectableItemBackground"
+                android:gravity="left"
+                android:text="A-Afternoon"
+                android:textSize="10sp" />
+
+            <com.visirx.patient.customview.NormalFont
+                android:id="@+id/Even"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="?attr/selectableItemBackground"
+                android:gravity="left"
+                android:text="E-Evening"
+                android:textSize="10sp" />
+
+
+            <com.visirx.patient.customview.NormalFont
+                android:id="@+id/Night"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="?attr/selectableItemBackground"
+                android:gravity="left"
+                android:text="N-Night"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="info.androidhive.materialtabs.fragments.ThreeFragment">
+
+    <LinearLayout
+        android:id="@+id/lytpatientid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin_low">
+
+        <com.visirx.patient.customview.NormalFont
+            android:id="@+id/notesappId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/emr_apmnt_id"
+            android:textColor="@android:color/white" />
+
+        <com.visirx.patient.customview.NormalFont
+            android:id="@+id/notesappDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_low"
+            android:text="@string/emr_date"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <EditText
+            android:id="@+id/messageEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/chatSendButton"
+            android:autoText="true"
+            android:padding="10dp"
+            android:background="@drawable/notes_edittext"
+            android:hint="Type message"
+            android:minHeight="45dp" />
+
+        <Button
+            android:id="@+id/chatSendButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/notes_button"
+            android:text="Send"
+            android:textColor="@color/White" />
+
+        <ListView
+            android:id="@+id/messagesContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/messageEdit"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentTop="false"
+            android:layout_marginBottom="20dp"
+            android:divider="@null"
+            android:listSelector="@android:color/transparent"
+            android:transcriptMode="alwaysScroll" />
+
+    </RelativeLayout>
+
+</LinearLayout>

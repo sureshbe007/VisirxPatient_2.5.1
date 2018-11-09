@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White">
+
+    <com.visirx.paramedic_and.customview.SquareImageView
+        android:id="@+id/picture_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/picture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:scaleType="centerCrop"
+        android:src="@drawable/play" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:padding="10dp" >
+
+        <com.visirx.paramedic_and.customview.NunitoTextView
+            android:id="@+id/text_file_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:paddingTop="10dp"
+            android:text="Sound" />
+
+        <com.visirx.paramedic_and.customview.NunitoTextView
+            android:id="@+id/textDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:paddingTop="10dp"
+            android:text="Aug 4"
+            android:textColor="@color/gray" />
+
+        <com.visirx.paramedic_and.customview.NunitoTextView
+            android:id="@+id/textDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_file_name"
+            android:text="00:30" />
+    </RelativeLayout>
+
+</FrameLayout>

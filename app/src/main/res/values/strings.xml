@@ -1,0 +1,493 @@
+<resources>
+    <string name="app_name">VisiRx</string>
+    <string name="title_activity_home">  Dashboard</string>
+    <string name="username">User Name</string>
+    <string name="password">Password</string>
+    <string name="signin">Sign in</string>
+    <string name="forgot_password">Forgot Password?</string>
+
+    <!--Toolbar Menu Items-->
+    <string name="saveinTool">Home</string>
+    <!--Navigation Drawer List Items-->
+    <string name="dashboard">Home</string>
+    <string name="Bookapt">Book Appointment</string>
+    <string name="AppointmentDetails">Appointment Details</string>
+    <string name="addDoctor">Find Doctor</string>
+    <string name="MyProfile">Profile</string>
+    <string name="invite_doctors">Invite Doctors</string>
+    <string name="help">About</string>
+    <string name="doctorprofile">Doctor Profile</string>
+    <string name="version">Version                       2.5.2</string>
+    <string name="logout">Log Out</string>
+    <string name="PERMISSION_DENIED">Storage permissions denied !</string>
+    <string name="ID">VisiRx ID</string>
+
+    <!--Activity Name on ActionBar-->
+    <string name="delete">Do you want delete this image ?</string>
+    <string name="dashboard_action">Home</string>
+    <string name="Bookapt_action">Book Appointments</string>
+    <string name="appoint_summary">Appointment Summary</string>
+    <string name="Payment_pending">Payment</string>
+    <string name="addDoctor_action">Find Doctor</string>
+    <string name="MyProfile_action">My Profile</string>
+    <string name="help_action">About</string>
+    <string name="invite_doctors_action">Invite Doctors</string>
+    <string name="appoint_Details">Appointment Details</string>
+    <!--Navigation Open and Close-->
+    <string name="openDrawer">Navigation Open</string>
+    <string name="closeDrawer">Navigation Close</string>
+
+    <!-- Notes chat from doctor app-->
+
+    <!--EMR for patient from paramedic-->
+    <string name="emr_saved_sucessfully">EMR File saved sucessfully</string>
+    <string name="emrInfo">No More EMR Data</string>
+
+    <!--Prescription from Doctor-->
+    <!--Prescription-->
+    <string name="pres_camera">Add Prescription</string>
+    <string name="pres_title">Pres</string>
+    <string name="pres_time">05:30 PM</string>
+    <string name="visirx_pharmacy">Do you want send the prescription to VisiRx Pharmacy ?</string>
+    <string name="patient_info">No More Patient</string>
+    <string name="emrData">No More EMR Data</string>
+    <string name="notesData">No More Notes</string>
+    <string name="prescriptionData">No More Prescription</string>
+    <string name="No_more_prescriotion">No more prescription</string>
+    <!--Emr Details-->
+    <string name="emr_apmnt_id">App Id :</string>
+    <string name="emr_date">Feb 10, 2016</string>
+    <string name="emr_title">AUSCULTATION</string>
+    <string name="emr_subtitle">5 Reports</string>
+
+    <!--Find Doctor-->
+    <string name="no_doctor">No More Doctor to Display</string>
+    <!--Book Appointment-->
+    <string name="explain_symptoms">Explain Your Symptoms</string>
+    <string name="symptom_hint">Describe with minimum 50 Characters</string>
+    <string name="select_mode">Select mode of consult *</string>
+    <string name="virtual">Virtual</string>
+    <string name="walkin">Walk-in</string>
+    <string name="virtual_consult">Virtual consult helps you consult doctor from your place</string>
+    <string name="slots_available"> Available Token. :</string>
+    <string name="today_date">Today 25, Feb 2016</string>
+    <string name="proceed">PROCEED</string>
+    <string name="backward"> &lt;</string>
+    <string name="forward">&gt;</string>
+    <string name="next_token">NEXT TOKEN AVAILABLE</string>
+
+    <!--Appointment History Details-->
+    <string name="apmnt_history_date">10-Feb-2016</string>
+    <string name="apmnt_history_status">Completed</string>
+    <!--Patient details-->
+    <string name="search_doctor">Search by ID or Search by Name</string>
+    <string name="patient_name">Scarlette Johanson</string>
+    <string name="patient_summary">DOCTOR SUMMARY</string>
+    <string name="time">04:00 PM</string>
+    <string name="visirx_id">Visirx ID :</string>
+    <string name="visirx_id_num">V100001</string>
+    <string name="patient_age">34</string>
+    <string name="female">Female</string>
+    <string name="symptoms">SYMPTOMS</string>
+    <string name="symptoms_details">A headache or cephalagia </string>
+    <string name="address_caps">ADDRESS</string>
+    <string name="sample_address">309, NSIC-Software Technologies Park, \n B-24,Guindy</string>
+    <string name="nurse_name">Uma Thuruman</string>
+    <string name="nurse_age">24</string>
+    <string name="nurse_id">VP 12001</string>
+    <string name="nurse_details">NURSE DETAILS</string>
+    <string name="appointment_history">APPOINTMENT HISTORY</string>
+    <string name="view_all_history">View All</string>
+    <!--Paramedic Profile Details in header-->
+
+    <string name="para_name">Maria Drum</string>
+    <string name="para_email">maria_drum@visirx.com</string>
+    <string name="cancel_appointment">Do you want cancel this appointment?</string>
+    <string name="attach_Doctor">Do you want add this Doctor?</string>
+    <string name="add_docotr">Do you want add  this Doctor?</string>
+    <string name="cancel_appoint">Do you want cancel this appointment?</string>
+
+    <string name="delete_appoint">Do you want Delete this appointment?</string>
+    <string name="delete_Doctor">Do you want Delete this Doctor?</string>
+    <string name="Plese_enterfilename">Plese Enter File Name</string>
+    <string name="dashBoardInfo">No More Patient</string>
+    <string-array name="menu_array">
+        <item> Dashboard</item>
+        <item>Calender</item>
+        <item>Earnings</item>
+        <item>Invite Doctors</item>
+    </string-array>
+
+
+    <string-array name="planets_array">
+        <item>2005</item>
+        <item>2006</item>
+        <item>2007</item>
+        <item>2008</item>
+        <item>2009</item>
+        <item>2010</item>
+        <item>2011</item>
+        <item>2012</item>
+        <item>2013</item>
+        <item>2014</item>
+        <item>2015</item>
+        <item>2016</item>
+    </string-array>
+    <string-array name="planets_Month">
+        <item>Jan</item>
+        <item>Feb</item>
+        <item>Mar</item>
+        <item>Apr</item>
+        <item>May</item>
+        <item>Jun</item>
+        <item>Jul</item>
+        <item>Aug</item>
+        <item>Sep</item>
+        <item>Oct</item>
+        <item>Nov</item>
+        <item>Dec</item>
+
+    </string-array>
+
+    <string name="wait_gcmProcess">Please Wait GCM Processed</string>
+    <string name="title_activity_total_earning">TotalEarningActivity</string>
+    <string name="title_activity_total_outstanding">TotalOutstandingActivity</string>
+    <string name="rupes"> Fees:   \u20B9</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="title_activity_add_notes">AddNotesActivity</string>
+    <string name="error_server_connect">Unable to connect. Please ensure your mobile data connection is turned on.</string>
+    <string name="title_tasks">Tasks</string>
+    <string name="title_setting">Setting</string>
+    <string name="fa_refresh">&#xf021;</string>
+    <string name="fa_check">&#xf00c;</string>
+    <string name="fa_user">&#xf007;</string>
+    <string name="fa_phone">&#xf095;</string>
+    <string name="fa_edit">&#xf044;</string>
+    <string name="fa_circle">&#xf111;</string>
+    <string name="add_notes">ADD NOTES</string>
+    <string name="call">camera</string>
+    <string name="cancel">Cancel</string>
+    <string name="appts_list">Appointmet List</string>
+    <string name="ready">Ready</string>
+    <string name="scheduled">Scheduled</string>
+    <string name="no_show">No show</string>
+    <string name="cancelled">Cancelled</string>
+    <string name="save">Save</string>
+    <string name="notes_saved_sucessfully">Notes saved sucessfully</string>
+    <string name="prescription_saved_sucessfully">Prescription saved sucessfully</string>
+    <string name="appointment_cancelled">Appointment cancelled sucessfully</string>
+    <string name="title_activity_patient_detail">PatientDetailActivity</string>
+    <string name="title_patient">Patient Profile</string>
+    <string name="title_emr">Emr</string>
+    <string name="title_notes">Notes</string>
+    <string name="title_prescription">Prescription</string>
+    <string name="title_activity_patient_tab">PatientTabActivity</string>
+    <string name="title_activity_appt_history">ApptHistoryActivity</string>
+    <string name="title_activity_ausculation">AusculationActivity</string>
+    <string name="title_activity_media_player">MediaPlayerActivity</string>
+    <string name="appointment_id_">"Appointment ID : "</string>
+    <string name="visirx_id_">"Visirx ID : "</string>
+    <string name="title_activity_emrimage">EMRImageActivity</string>
+    <string name="title_activity_emrimage_full">EMRImageFullActivity</string>
+    <string name="title_activity_add_prescription">AddPrescriptionActivity</string>
+    <string name="successfully_updated_fee">Successfully Updated Fee</string>
+    <string name="appointment_completed">Appointment completed sucessfully</string>
+    <string name="your_string_here">This is an <u>underline</u>.</string>
+    <string name="complete_appointment">Do you want complete the appointment?</string>
+    <string name="confirm_action">CONFIRM ACTION</string>
+    <string name="doctor_details">DOCTOR DETAIL</string>
+    <string name="appintment_details">APPOINTMENT DETAIL</string>
+    <string name="paramedic_status">yet to be assigned</string>
+    <string name="file_name">File name is missing</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_auscultation">Auscultation</string>
+    <string name="title_activity_image">Image</string>
+    <string name="title_activity_vitalsign">Vital Sign</string>
+    <string name="description">Description</string>
+
+
+    <string name="hello_world">Hello world!</string>
+
+
+
+    <!-- Apointment -->
+    <string name="recoverymail">Recovery mail address</string>
+    <string name="begin">Your appointment will begin between</string>
+    <string name="infotext">We will hold your appointment request for 25 minutes while you answer a few question.</string>
+    <string name="visit_purpose">Please briefly describe the purpose of your visit:</string>
+    <string name="time_period">When did you start feeling this way?</string>
+    <!-- Home -->
+    <string name="me">Me</string>
+    <string name="myhealth">My Health</string>
+    <string name="appointment">Appointments</string>
+
+    <!-- Medication -->
+    <string name="medication_text">Please tell us if you are currently taking any medications,and if so,how long?</string>
+    <string name="spinner_title">The past week</string>
+    <string name="spinner_gender">Gender</string>
+    <string name="spinner_blood">Blood Group</string>
+
+    <!-- Alergies -->
+    <string name="allergies">Please tell us any allergies you have: </string>
+
+    <!-- Symtoms -->
+
+
+    <!-- Medical condition -->
+    <string name="medical_condition">Please let us know if you have any medical conditions. Tap all that apply.</string>
+
+    <!--Your child-->
+    <string name="child">Who is the patient?</string>
+
+    <!-- Apply coupon page -->
+    <string name="couponmsg">Do you have coupon code to use with Ready Doctor? </string>
+    <!-- Landing -->
+
+    <string name="ondemand">On Demand</string>
+
+    <string name="signup">Sign Up</string>
+    <string name="meetus">Meet Us</string>
+
+    <!-- Login Page -->
+    <string name="email_hint">Email Address</string>
+    <string name="pass_hint">Password</string>
+    <string name="iforgot_text">I Forgot My Password</string>
+
+    <!-- SignUp -->
+    <string name="name">Full Name</string>
+    <string name="dob">Date of Birth</string>
+    <string name="iagree">I agree to Doctor on Demands\'s</string>
+    <string name="tc">Terms of Use &amp; Informed Consent </string>
+
+    <!-- navigation drawer -->
+    <string name="getfree">Get Free Visits!</string>
+    <string name="applycoupon">Apply Coupon</string>
+    <string name="addreferal">Add Referral Source</string>
+    <string name="updateemail">Update Email &amp; Password</string>
+    <string name="updatename">Update Name &amp; Address</string>
+    <string name="updatepayment">Update Payment Method</string>
+    <string name="privacypolicy">Privacy Policy</string>
+    <string name="support">Support</string>
+    <string name="Feedback">Feedback</string>
+    <string name="SignOut">Sign Out</string>
+
+    <!-- Support -->
+
+    <string name="Support_msg">Are you having issue with doctors or not sure how to use our service? We are here to help.</string>
+
+    <!--video chat-->
+    <!--<string name="action_log_out">Log out</string>-->
+    <!--<string name="login_as">Login as</string>-->
+    <!--<string name="logged_in_as">Logged In as</string>-->
+    <!--<string name="outputing_audio_call">Outputing Audio Call - </string>-->
+    <!--<string name="incoming_call">Incoming Call</string>-->
+    <!--<string name="also_on_call">Also on call:</string>-->
+    <!--<string name="edit_opponents_list">Edit opponents list</string>-->
+    <!--<string name="incoming_audio_call">Incoming Audio Call</string>-->
+    <!--<string name="incoming_video_call">Incoming Video Call</string>-->
+    <!--<string name="connect">Connect...</string>-->
+    <!--<string name="checking">Checking...</string>-->
+    <!--<string name="connected">Connected</string>-->
+    <!--<string name="disconnected">Disconnected</string>-->
+    <string name="hung_up_processing">Hang up call command are processing ...</string>
+
+
+
+    <string name="choose_one_opponent">Choose one opponent</string>
+    <string name="service_launched">Service for listening to calls launched</string>
+    <string name="service_stopped">Service for listening to calls stopped</string>
+
+
+    <!--  //temporary values -->
+    <string name="only_peer_to_peer_calls">Only 1-to-1 calls are available</string>
+
+    <!--   //Progress Dialog -->
+    <string name="load_opponents">Load opponents ...</string>
+    <string name="wait_until_loading_finish">Wait until loading finish</string>
+
+    <string name="processes_login">Login ...</string>
+    <string name="wait_until_login_finish">Wait until login finish</string>
+    <string name="processes_relogin">Relogin ...</string>
+
+
+
+    <string name="WIFI_DISABLED">Call was stoped because connection was lost</string>
+    <string name="NETWORK_ABSENT">Connection lost</string>
+    <string name="internet_not_connected">Please check your Internet connection</string>
+    <string name="initializing_in_chat">Initializing in chat, please wait...</string>
+    <string name="ok_button">OK</string>
+
+    <string name="quit_dialog_title">Exit</string>
+    <string name="quit_dialog_message">Press \"Minimize\" to minimize the application or the \"Exit with log out\" to log out and exit from the app</string>
+    <string name="positive_response">Exit with log out</string>
+    <string name="negative_response">Minimize</string>
+    <string name="log_out_dialog_title">Log out</string>
+    <string name="log_out_dialog_message">Are you sure?</string>
+    <string name="positive_button">Log out</string>
+    <string name="negative_button">Cancel</string>
+    <string name="attachment_option">Take Picture</string>
+    <string name="file_attachment">File attachment</string>
+    <string name="file_upload_not_completed">File Uploading failed</string>
+    <string name="user_alert">User alert</string>
+    <string name="app_logout">Do you want to logout ?</string>
+    <string name="error_gcm">Please check your data connection</string>
+
+	
+	
+	// QuickBlox AV START
+	
+
+    <string name="action_log_out">Log out</string>
+    <string name="login_as">Login as</string>
+    <string name="logged_in_as">Logged In as</string>
+    <string name="outputing_audio_call">Outputing Audio Call - </string>
+    <string name="incoming_call">Incoming Call</string>
+    <string name="also_on_call">Also on call:</string>
+    <string name="edit_opponents_list">Edit opponents list</string>
+    <string name="incoming_audio_call">Incoming Audio Call</string>
+    <string name="incoming_video_call">Incoming Video Call</string>
+    <string name="connect">Connect...</string>
+    <string name="checking">Checking...</string>
+    <string name="connected">Connected</string>
+    <string name="disconnected">Disconnected</string>
+
+    <string name="users_tag">webrtc</string>
+
+    <string name="welcoming_message">Login as any user on this deviсe and another(s) users on another device</string>
+    <string name="select_user_to_call">Select Users You Want to Call</string>
+
+    
+    <string name="btn_audio_call">AUDIO CALL</string>
+    <string name="btn_video_call">VIDEO CALL</string>
+    <string name="opponentsListActionBarTitle"><![CDATA[Video & Audio Group Chat Sample]]></string>
+    <string name="current_version">0.9.1</string>
+    <string name="rejected">Rejected</string>
+    <string name="noAnswer">No answer</string>
+    <string name="unDefined">Undefined</string>
+    <string name="pending">Pending</string>
+    <string name="hungUp">Hung up</string>
+    <string name="closed">Closed</string>
+    <string name="time_out">Time Out</string>
+    <string name="failed">Failed</string>
+    <string name="call_was_stopped_connection_lost">Call was stopped because connection was lost</string>
+    <string name="connection_was_lost">Chat connection was lost</string>
+    <string name="connection_reconnected">Connection reconnected</string>
+
+    <!-- Dialogs strings. -->
+    <string name="dlg_signal_error">Disconnected… Please check your Internet connection!</string>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="blue_green">#008080</color>
+    <color name="grey">#606060</color>
+    <color name="gold">#FFD700</color>
+    <color name="spring_bud">#A7FC00</color>
+    <color name="water_bondi_beach">#0095B6</color>
+    <color name="coral">#FF4040</color>
+    <color name="lime">#00FF00</color>
+    <color name="may_green">#4C9141</color>
+    <color name="mauveine">#EF0097</color>
+    <color name="blue">#1FCECB</color>
+    <color name="orange">#FFA500</color>
+    <color name="gentianaceae_blue">#2A6478</color>
+    <color name="blue_krayola">#1F75FE</color>
+    <color name="red">#FF0000</color>
+    <color name="white_blue">#00BFFF</color>
+    <color name="pink">#FF7A7A</color>
+    <color name="green">#45D100</color>
+    <color name="white_green">#A9FF80</color>
+    <color name="black_transparent_30">#30000000</color>
+    <color name="black_transparent_50">#50000000</color>
+    <color name="white_transparent_80">#80FFFFFF</color>
+
+    <!-- Settings strings. -->
+    <string name="pref_default_value">Default</string>
+
+    <string name="pref_resolution_key">resolution_preference</string>
+    <string name="pref_resolution_title">Video resolution.</string>
+    <string name="pref_resolution_dlg">Enter RTC local video resolution.</string>
+    <string name="pref_resolution_default">-1</string>
+
+    <string name="pref_fps_key">fps_preference</string>
+    <string name="pref_fps_title">Camera fps.</string>
+    <string name="pref_fps_dlg">Enter local camera fps.</string>
+    <string name="pref_fps_default">0</string>
+
+    <string name="pref_startbitrate_key">startbitrate_preference</string>
+    <string name="pref_startbitrate_title">Start bitrate setting.</string>
+    <string name="pref_startbitrate_dlg">Start bitrate setting.</string>
+    <string name="pref_startbitrate_default">Default</string>
+
+    <string name="pref_startbitratevalue_key">startbitratevalue_preference</string>
+    <string name="pref_startbitratevalue_title">Video encoder start bitrate.</string>
+    <string name="pref_startbitratevalue_dlg">Enter video encoder start bitrate in kbps.(Max is 2000)</string>
+    <string name="pref_startbitratevalue_default">1000</string>
+
+    <string name="pref_videocodec_key">videocodec_preference</string>
+    <string name="pref_videocodec_title">Default video codec.</string>
+    <string name="pref_videocodec_dlg">Select default video codec.</string>
+    <string name="pref_videocodec_default">0</string>
+
+    <string name="pref_hwcodec_key">hwcodec_preference</string>
+    <string name="pref_hwcodec_title">Video codec hardware acceleration.</string>
+    <string name="pref_hwcodec_dlg">Use hardware accelerated video codec (if available).</string>
+    <string name="pref_hwcodec_default">true</string>
+
+    <string name="pref_initiator_behaviour_key">initiator_as_main_preference</string>
+    <string name="pref_initiator_behaviour_title">End conference if initiator hangs up</string>
+    <string name="pref_initiator_behaviour_default">true</string>
+
+
+
+
+    <string name="pref_value_enabled">Enabled</string>
+    <string name="pref_value_disabled">Disabled</string>
+
+    <string name="pref_noaudioprocessing_key">audioprocessing_preference</string>
+    <string name="pref_noaudioprocessing_title">Disable audio processing.</string>
+    <string name="pref_noaudioprocessing_dlg">Disable audio processing pipeline.</string>
+    <string name="pref_noaudioprocessing_default">false</string>
+
+    <string name="pref_aecdump_key">aecdump_preference</string>
+    <string name="pref_aecdump_title">Create aecdump.</string>
+    <string name="pref_aecdump_dlg">Enable diagnostic audio recordings.</string>
+    <string name="pref_aecdump_default">false</string>
+
+    <string name="pref_opensles_key">opensles_preference</string>
+    <string name="pref_opensles_title">Use OpenSL ES for audio playback.</string>
+    <string name="pref_opensles_dlg">Use OpenSL ES for audio playback.</string>
+    <string name="pref_opensles_default">false</string>
+
+    <string name="pref_disable_built_in_aec_key">disable_built_in_aec_preference</string>
+    <string name="pref_disable_built_in_aec_title">Disable built-in AEC.</string>
+    <string name="pref_disable_built_in_aec_dlg">Disable built-in AEC.</string>
+    <string name="pref_disable_built_in_aec_default">false</string>
+    <string name="pref_built_in_aec_not_available">Built-in AEC is not available</string>
+
+    <string name="pref_tracing_key">tracing_preference</string>
+    <string name="pref_tracing_title">Debug performance tracing.</string>
+    <string name="pref_tracing_dlg">Debug performance tracing.</string>
+    <string name="pref_tracing_default" translatable="false">false</string>
+
+    <string name="pref_displayhud_key">displayhud_preference</string>
+    <string name="pref_displayhud_title">Display call statistics.</string>
+    <string name="pref_displayhud_dlg">Display call statistics.</string>
+    <string name="pref_displayhud_default" translatable="false">false</string>
+    <string name="action_settings">Settings</string>
+    <string name="pref_audiocodec_key">pref_audio_codec</string>
+    <string name="pref_audiocodec_title">Default audio codec</string>
+    <string name="pref_audiocodec_def">ISAC</string>
+    <string name="pref_audiocodec_dlg">Select default audio codec</string>
+    <string name="btn_screen_capture">screenShot</string>
+    <string name="accepted">Accepted</string>
+    <string name="dlg_accepted_another_device">Call was accepted on another device</string>
+    <string name="dlg_rejected_another_device">Call was rejected on another device</string>
+    <string name="pref_use_proximity_sensor">use_proximity_sensor</string>
+    <string name="pref_use_proximity_sensor_title">Use proximity sensor to switch speakers</string>
+	
+	// QuickBlox AV END
+	
+
+</resources>

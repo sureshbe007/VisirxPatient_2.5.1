@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="bottom"
+    tools:ignore="ContentDescription" >
+
+    <ImageView
+        android:id="@+id/slideView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:src="@drawable/backbutton" />
+
+    <FrameLayout
+        android:id="@+id/frame_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_toRightOf="@+id/slideView" >
+
+        <ImageView
+            android:id="@+id/person_photo"
+            android:layout_width="@dimen/persion_image_dashboard"
+            android:layout_height="@dimen/persion_image_dashboard"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            tools:ignore="ContentDescription" />
+
+        <!-- <ImageView
+            android:id="@+id/statusIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical|bottom"
+            android:layout_margin="8dp"
+            android:src="@drawable/ellipse_green"
+            android:visibility="gone" /> -->
+
+        <ImageView
+            android:id="@+id/tickIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/tick"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/status_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frame_photo"
+        android:layout_gravity="right|center_vertical|bottom"
+        android:layout_margin="8dp"
+
+        android:layout_toRightOf="@+id/frame_photo"
+        android:src="@drawable/ellipse_green" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/frame_photo"
+        android:paddingLeft="10dp" >
+
+        <RelativeLayout
+            android:id="@+id/name_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <com.visirx.patient.customview.NunitoTextView
+                android:id="@+id/person_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:textSize="@dimen/name_txt" />
+
+            <com.visirx.patient.customview.NunitoTextView
+                android:id="@+id/person_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/person_name"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/person_name" />
+
+            <com.visirx.patient.customview.NunitoTextView
+                android:id="@+id/person_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/person_age"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/person_age" />
+        </RelativeLayout>
+
+        <com.visirx.patient.customview.NunitoTextView
+            android:id="@+id/person_message"
+            android:drawableLeft="@drawable/note_patient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name_layout"
+            android:textColor="@color/gray_light"
+            android:textSize="@dimen/sub_txt" />
+
+        <RelativeLayout
+            android:id="@+id/time_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/person_message" >
+
+            <TextView
+                android:id="@+id/time_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:drawableLeft="@drawable/time"
+                android:textSize="@dimen/time_icon_dashboard" />
+
+            <com.visirx.patient.customview.NunitoTextView
+                android:id="@+id/apt_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/time_icon"
+                android:layout_toRightOf="@+id/time_icon"
+                android:paddingLeft="5dp"
+                android:text="09:15"
+                android:textSize="@dimen/sub_txt" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

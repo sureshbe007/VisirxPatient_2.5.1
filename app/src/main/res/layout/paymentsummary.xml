@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <com.visirx.patient.customview.MediumFont
+        android:id="@+id/alert_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:contentDescription="@string/app_name"
+        android:gravity="left"
+        android:padding="10sp"
+        android:paddingBottom="@dimen/alert_head_bottom"
+        android:paddingLeft="@dimen/alert_head_left"
+        android:paddingTop="@dimen/alert_head_top"
+        android:text="PAYMENT DETAILS"
+        android:textColor="@color/White"/>
+
+    <LinearLayout
+        android:id="@+id/Parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/addressParent1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.visirx.patient.customview.NormalFont
+                android:id="@+id/appointmentID1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="15dp"
+                android:text="Appointment ID"
+                android:textColor="@color/actionBarBackground"/>
+
+            <com.visirx.patient.customview.NormalFont
+                android:id="@+id/doctorfees1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="15dp"
+                android:background="?attr/selectableItemBackground"
+                android:text="Doctor Fee"/>
+
+            <com.visirx.patient.customview.NormalFont
+                android:id="@+id/Platformfees1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="15dp"
+                android:background="?attr/selectableItemBackground"
+                android:text="Platform Fee"/>
+
+            <com.visirx.patient.customview.NormalFont
+                android:id="@+id/Totoalamouunt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="15dp"
+                android:background="?attr/selectableItemBackground"
+                android:text="Total Amount"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/addressParent2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.visirx.patient.customview.NormalFont
+                android:id="@+id/appointmentID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:gravity="left"
+                android:text="Test1"
+                android:textColor="@color/actionBarBackground"/>
+
+            <com.visirx.patient.customview.NormalFont
+                android:id="@+id/doctorfees"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:background="?attr/selectableItemBackground"
+                android:gravity="left"
+                android:text="Test1"
+                />
+
+            <com.visirx.patient.customview.NormalFont
+                android:id="@+id/Platformfees"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:background="?attr/selectableItemBackground"
+                android:gravity="left"
+                android:text="Test1"
+                />
+
+            <com.visirx.patient.customview.NormalFont
+                android:id="@+id/Totoalamouunt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:background="?attr/selectableItemBackground"
+                android:gravity="left"
+                android:text="Test1"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/ViewLine"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/Parent"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="5dp"
+        android:background="#c0c0c0"/>
+
+    <com.visirx.patient.customview.NormalFont
+        android:id="@+id/tax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ViewLine"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="@dimen/yes_margin_right"
+        android:layout_marginTop="8dp"
+        android:background="?attr/selectableItemBackground"
+        android:textColor="@color/actionBarBackground"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tax"
+        android:layout_gravity="center"
+        android:layout_marginRight="@dimen/layout_margin_right"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp">
+
+
+        <Button
+            android:id="@+id/paynow"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="right"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/mybutton"
+            android:padding="2dp"
+            android:text="Pay Now"
+            android:textColor="@color/White"/>
+
+        <Button
+            android:id="@+id/Cancelappoint"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="right"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="@dimen/yes_margin_right"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/mybutton"
+            android:padding="2dp"
+            android:text="Cancel"
+            android:textColor="@color/White"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

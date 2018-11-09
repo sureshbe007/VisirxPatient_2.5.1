@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="2dp"
+        android:layout_margin="2dp">
+
+        <TextView
+            android:id="@+id/legalEntityName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:text="Pharmacy"
+            android:textSize="18dp" />
+
+        <TextView
+            android:layout_below="@+id/legalEntityName"
+            android:id="@+id/businessAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingTop="5dp"
+            android:text="Area"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_below="@+id/businessAddress"
+            android:id="@+id/zipcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingTop="5dp"
+            android:text="Area"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

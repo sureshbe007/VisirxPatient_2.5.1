@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/White">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/grid_border"
+        android:orientation="vertical"
+        android:padding="2dp">
+
+        <com.visirx.patient.customview.MediumFont
+
+            android:id="@+id/createdBy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:text=""
+            android:textColor="@android:color/darker_gray"
+            android:textSize="@dimen/size_normal"/>
+
+
+        <com.visirx.patient.customview.SquareImageView
+            android:id="@+id/picture_emr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp">
+
+            <com.visirx.patient.customview.NormalFont
+                android:id="@+id/lblAusName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:padding="2dp"
+                android:text="dgdhdgdh"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/size_normal"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/imagetick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="3dp"
+                android:src="@drawable/ic_done"/>
+
+            <!--<com.visirx.patient.customview.NormalFont-->
+            <!--android:id="@+id/lblAusDate"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:padding="2dp"-->
+            <!--android:text=""-->
+            <!--android:textColor="@android:color/black"-->
+            <!--android:textSize="@dimen/size_normal"/>-->
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="@color/PrimaryColor">
+
+            <com.visirx.patient.customview.NormalFont
+                android:id="@+id/lblAusDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_margin="5dp"
+                android:text=""
+                android:textColor="@color/White"
+                android:textSize="12sp"/>
+
+            <!--<ImageView-->
+            <!--android:id="@+id/imagetick"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_marginRight="5dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:src="@drawable/ic_done"/>-->
+
+            <ImageView
+                android:id="@+id/imagetrash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/ic_action_trash"
+                />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

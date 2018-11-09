@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.visirx.patient.customview.MediumFont
+
+        android:id="@+id/alert_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:contentDescription="@string/app_name"
+        android:gravity="left"
+        android:padding="10sp"
+        android:paddingBottom="@dimen/alert_head_bottom"
+        android:paddingLeft="@dimen/alert_head_left"
+        android:paddingTop="@dimen/alert_head_top"
+        android:text="ATTACH PHOTO"
+        android:textColor="@color/White" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="10dp">
+
+        <com.visirx.patient.customview.NormalFont
+            android:id="@+id/appointmentID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="15dp"
+            android:text="Take Photo"
+            android:background="?attr/selectableItemBackground"/>
+
+        <com.visirx.patient.customview.NormalFont
+            android:id="@+id/doctorfees"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="@dimen/yes_margin_right"
+            android:layout_marginTop="15dp"
+            android:background="?attr/selectableItemBackground"
+            android:text="Choose from Library" />
+
+        <com.visirx.patient.customview.NormalFont
+            android:id="@+id/Platformfees"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="@dimen/yes_margin_right"
+            android:layout_marginTop="15dp"
+            android:padding="4dp"
+            android:background="@drawable/mybutton"
+            android:text="Cancel"
+            android:textColor="@color/White" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

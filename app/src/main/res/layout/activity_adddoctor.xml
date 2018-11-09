@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/drawer"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context="com.visirx.patient.activity.AdddoctorActivity">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/addDocotor_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="?attr/colorPrimary"
+            android:elevation="6dp"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+        <RelativeLayout
+            android:id="@+id/serachlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/addDocotor_toolbar"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rounded_border">
+
+            <EditText
+                android:id="@+id/searchView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:background="@null"
+                android:hint="Search by Name / Doctor ID"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:paddingLeft="6dp"
+                android:paddingRight="10dp"/>
+
+            <TextView
+                android:id="@+id/ser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/searchView1"
+                android:drawableRight="@drawable/ic_searchdoctor"
+                android:imeOptions="actionSearch"/>
+
+            <TextView
+                android:id="@+id/no_doctor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/no_doctor"
+                android:visibility="gone"
+
+                />
+
+            <ProgressBar
+                android:id="@+id/adddcotor_process"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/add_recycler_view"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/serachlayout"
+            android:layout_marginTop="10dp"
+            android:clipToPadding="false"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp"/>
+
+    </RelativeLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/add_navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/header"
+        app:itemTextColor="@color/Navigation_text"
+        app:menu="@menu/drawer"/>
+</android.support.v4.widget.DrawerLayout>

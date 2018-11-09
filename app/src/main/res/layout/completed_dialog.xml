@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <com.visirx.patient.customview.NunitoTextView
+        android:id="@+id/alert_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_visirx"
+        android:contentDescription="@string/app_name"
+        android:gravity="center"
+        android:padding="10sp"
+        android:text="@string/confirm_action"
+        android:textColor="@color/White"
+        android:typeface="serif" />
+
+    <TextView
+        android:id="@+id/cancel_apponitment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/alert_dialog"
+        android:paddingLeft="15dp"
+        android:paddingTop="5dp"
+        android:layout_margin="10dp"
+        android:text="@string/complete_appointment"
+        android:typeface="serif" >
+    </TextView>
+
+</RelativeLayout>

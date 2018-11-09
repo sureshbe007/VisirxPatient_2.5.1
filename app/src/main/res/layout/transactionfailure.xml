@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.visirx.patient.customview.MediumFont
+
+        android:id="@+id/TransactionFailyreStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:contentDescription="@string/app_name"
+        android:gravity="left"
+        android:padding="10sp"
+        android:paddingBottom="@dimen/alert_head_bottom"
+        android:paddingLeft="@dimen/alert_head_left"
+        android:paddingTop="@dimen/alert_head_top"
+        android:text="TRANSACTION FAILURE"
+        android:textColor="@color/White" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginRight="@dimen/layout_margin_right"
+        android:layout_marginTop="25dp"
+        android:orientation="vertical"
+        android:paddingBottom="20dp">
+
+        <com.visirx.patient.customview.NormalFont
+            android:id="@+id/transSatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="@dimen/no_margin_right"
+            android:layout_marginTop="20dp"
+            android:text="Sorry! Transaction has failed Please try again" />
+
+        <Button
+            android:id="@+id/tryagain"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/yes_margin_right"
+            android:layout_marginTop="15dp"
+            android:background="@color/PrimaryColor"
+            android:padding="4dp"
+            android:text="Try again"
+            android:textColor="@color/White" />
+
+    </LinearLayout>
+
+</LinearLayout>

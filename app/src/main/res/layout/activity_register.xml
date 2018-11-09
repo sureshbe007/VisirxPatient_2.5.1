@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.visirx.patient.utils.Register">
+
+    <ScrollView
+        android:id="@+id/Register_Sroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/Reg_Parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin">
+
+            <ImageView
+                android:id="@+id/vrlogo_apt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:contentDescription="TODO"
+                android:gravity="center"
+                android:src="@drawable/logo"/>
+
+            <LinearLayout
+                android:id="@+id/register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vrlogo_apt"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone"
+                >
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center">
+
+                    <EditText
+                        android:id="@+id/userName"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_bottom_line"
+                        android:drawableLeft="@drawable/patient_user"
+                        android:drawablePadding="@dimen/margin_low"
+                        android:hint="User Name"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:paddingLeft="6dp"
+                        android:singleLine="true"
+                        tools:ignore="HardcodedText"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:gravity="center">
+
+                    <EditText
+                        android:id="@+id/userEmail"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/edittext_bottom_line"
+                        android:drawableLeft="@drawable/patient_mail"
+                        android:drawablePadding="@dimen/margin_low"
+                        android:hint="Email ID"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        tools:ignore="HardcodedText"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:gravity="center">
+
+                    <EditText
+                        android:id="@+id/userPhone"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/edittext_bottom_line"
+                        android:drawableLeft="@drawable/patient_phone"
+                        android:drawablePadding="@dimen/margin_low"
+                        android:hint="Phone Number"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:singleLine="true"
+                        tools:ignore="HardcodedText"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:gravity="center">
+
+                    <EditText
+                        android:id="@+id/userPass"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/edittext_bottom_line"
+                        android:drawableLeft="@drawable/patient_password"
+                        android:drawablePadding="@dimen/margin_low"
+                        android:hint="Password"
+                        android:imeOptions="actionNext"
+                        android:inputType="textPassword"
+                        android:singleLine="true"
+                        tools:ignore="HardcodedText"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:gravity="center">
+
+                    <EditText
+                        android:id="@+id/userConPass"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/edittext_bottom_line"
+                        android:drawableLeft="@drawable/patient_password"
+                        android:drawablePadding="@dimen/margin_low"
+                        android:hint="Confirm Password"
+                        android:imeOptions="actionDone"
+                        android:inputType="textPassword"
+                        android:singleLine="true"
+                        tools:ignore="HardcodedText"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/termCondtion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        />
+
+                    <com.visirx.patient.customview.NormalFont
+                        android:id="@+id/TermsagreeText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/termCondtion"
+                        android:layout_marginTop="10dp"
+                        android:text="I Accept terms and conditions"
+                        android:textColor="@color/appointbasefragment_tabtextcolor"/>
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/btnRegister_pat"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/termCondtion"
+                    android:layout_margin="20dp"
+                    android:background="@color/Button_Color"
+                    android:text="SIGN UP"
+                    android:textColor="@color/Button_Text_Color"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/codeveryfy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vrlogo_apt"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="40dp"
+                android:visibility="visible">
+
+                <RelativeLayout
+                    android:id="@+id/OtpEtxtParent"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_bottom_line"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/otp_pass_pat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:drawableLeft="@drawable/pass"
+                        android:text="  | "
+                        android:textColor="@color/gray_light"
+                        tools:ignore="HardcodedText"/>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:layout_toRightOf="@+id/otp_pass_pat">
+
+                        <EditText
+                            android:id="@+id/OtpEtxt1"
+                            android:layout_width="300dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:background="#00000000"
+                            android:hint=" Enter OTP"
+                            android:inputType="number"
+                            android:singleLine="true"
+                            android:textColorHint="@color/gray_light"/>
+                    </android.support.design.widget.TextInputLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/codetxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/OtpEtxtParent"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:text="Enter OTP to verify your Mobile Number"/>
+
+                <Button
+                    android:id="@+id/btnVeryCode"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtNoOtp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/Button_Color"
+                    android:gravity="center"
+                    android:text="VERIFY NUMBER"
+                    android:textColor="@color/Button_Text_Color"/>
+
+                <TextView
+                    android:id="@+id/txtNoOtp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/codetxt"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Did not receive  OTP :"/>
+
+                <TextView
+                    android:id="@+id/txtotpresend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/codetxt"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/txtNoOtp"
+                    android:linksClickable="true"
+                    android:text=" Resend OTP ?"
+                    android:textColor="@color/Link_Text_Color"/>
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/TermsLiner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/White"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+        <com.visirx.patient.customview.NormalFont
+            android:id="@+id/condition1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/contact2"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="Terms and conditions"
+            android:textColor="@color/appointbasefragment_tabtextcolor"
+            android:textSize="15sp">
+
+        </com.visirx.patient.customview.NormalFont>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="2.5"
+            android:orientation="vertical">
+
+            <WebView
+                android:id="@+id/Webview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="0.25"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/Backbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="25dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/mybutton"
+                android:text="back"
+                android:textColor="@color/White"
+                android:textSize="14sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

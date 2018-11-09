@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/patient_Orignai_color"
+        android:foreground="?attr/selectableItemBackground"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+
+        <ScrollView
+            android:id="@+id/termsScroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                >
+
+                <com.visirx.patient.customview.MediumFont
+                    android:id="@+id/alert_dialog"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:contentDescription="@string/app_name"
+                    android:gravity="left"
+                    android:padding="10sp"
+                    android:paddingBottom="@dimen/alert_head_bottom"
+                    android:paddingLeft="@dimen/alert_head_left"
+                    android:paddingTop="@dimen/alert_head_top"
+                    android:text="TERMS AND  CONDTION"
+                    android:textColor="@color/White"/>
+
+                <com.visirx.patient.customview.NormalFont
+                    android:id="@+id/condtion1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginTop="15dp"
+                    android:text=""
+                    android:textColor="@color/actionBarBackground"/>
+
+                <com.visirx.patient.customview.NormalFont
+                    android:id="@+id/condtion2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="@dimen/yes_margin_right"
+                    android:layout_marginTop="35dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:text=""/>
+
+                <com.visirx.patient.customview.NormalFont
+                    android:id="@+id/condtion3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="@dimen/yes_margin_right"
+                    android:layout_marginTop="3dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:text=""/>
+
+                <com.visirx.patient.customview.NormalFont
+                    android:id="@+id/condtion4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="@dimen/yes_margin_right"
+                    android:layout_marginTop="3dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:text=""/>
+
+
+                <com.visirx.patient.customview.NormalFont
+                    android:id="@+id/tax"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="@dimen/yes_margin_right"
+                    android:layout_marginTop="8dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:textColor="@color/actionBarBackground"/>
+
+
+                <com.visirx.patient.customview.NormalFont
+                    android:id="@+id/Cancel_Condtion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="@dimen/yes_margin_right"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/mybutton"
+                    android:layout_gravity="center"
+                    android:padding="2dp"
+                    android:layout_marginBottom="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="Cancel"
+                    android:textColor="@color/White"/>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

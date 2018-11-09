@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.visirx.patient.customview.NormalFont
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="10dp" />
+
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/text"
+        android:background="@drawable/layout_border">
+
+        <com.visirx.patient.customview.SquareImageView
+            android:id="@+id/picture_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:scaleType="centerCrop" >
+
+            <com.visirx.patient.customview.MediumFont
+                android:id="@+id/text_header"
+                android:textSize="@dimen/size_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/background_visirx" />
+
+            <com.visirx.patient.customview.NormalFont
+                android:id="@+id/text_result"
+                android:textSize="@dimen/size_normal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_header"
+                android:textColor="@color/gray" />
+        </RelativeLayout>
+    </FrameLayout>
+
+</RelativeLayout>

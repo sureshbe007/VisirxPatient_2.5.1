@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/grid_border"
+        android:orientation="vertical"
+        android:padding="3dp">
+
+
+        <com.visirx.patient.customview.SquareImageView
+            android:id="@+id/imgpreview"
+            android:src="@drawable/ic_digital_pres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_low">
+
+            <com.visirx.patient.customview.NormalFont
+                android:id="@+id/text_prescription_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="@string/pres_title"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size_small"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/imageTick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/margin_low"
+                />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:padding="4dp"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <com.visirx.patient.customview.NormalFont
+                android:id="@+id/text_prescription_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="@string/pres_time"
+                android:textColor="@color/White"
+                android:textSize="@dimen/text_size_small"/>
+
+
+            <!--<ImageView-->
+            <!--android:visibility="gone"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@drawable/ic_done_all"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_alignRight="@+id/imgonetick"-->
+            <!--android:id="@+id/imgdoubletick" />-->
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

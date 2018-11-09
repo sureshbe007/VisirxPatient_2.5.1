@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/drawer"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.visirx.patient.activity.HelpActivity">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/Help_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="?attr/colorPrimary"
+            android:elevation="6dp"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+        <WebView
+            android:id="@+id/Webview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Help_toolbar">
+
+        </WebView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Webview"
+            android:layout_centerInParent="true">
+
+            <com.visirx.patient.customview.MediumFont
+                android:id="@+id/Bookapt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:text="About Us"
+                android:visibility="gone"
+                android:textColor="@color/appointbasefragment_tabtextcolor"
+                android:textSize="14sp"/>
+
+            <com.visirx.patient.customview.NormalFont
+                android:id="@+id/abouUS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Bookapt"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical|left"
+                android:inputType="textMultiLine"
+                android:maxLines="16"
+                android:minLines="8"
+                android:padding="10dp"
+                android:singleLine="false"
+                android:textColor="@color/tripTableHeader"
+                android:textSize="14sp"/>
+
+            <RelativeLayout
+                android:id="@+id/WebParent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/abouUS"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <com.visirx.patient.customview.NormalFont
+                    android:id="@+id/contact1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Contact us :"
+                    android:visibility="gone"
+                    android:textColor="@color/tripTableHeader"
+                    android:textSize="14sp">
+
+                </com.visirx.patient.customview.NormalFont>
+
+
+                <com.visirx.patient.customview.NormalFont
+                    android:id="@+id/contact2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/contact1"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textSize="14sp">
+
+                </com.visirx.patient.customview.NormalFont>
+
+                <com.visirx.patient.customview.NormalFont
+                    android:id="@+id/condition1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/contact2"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Terms and conditions :"
+                    android:visibility="gone"
+                    android:textSize="14sp">
+
+                </com.visirx.patient.customview.NormalFont>
+
+
+                <com.visirx.patient.customview.NormalFont
+                    android:id="@+id/condition2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/condition1"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    android:singleLine="true"
+                    android:textColorLink="#369575"
+                    android:textSize="14sp">
+
+                </com.visirx.patient.customview.NormalFont>
+
+                <com.visirx.patient.customview.NormalFont
+                    android:id="@+id/policy1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/condition2"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Privacy policy:"
+                    android:visibility="gone"
+                    android:textSize="14sp">
+
+                </com.visirx.patient.customview.NormalFont>
+
+                <com.visirx.patient.customview.NormalFont
+                    android:id="@+id/policy2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/policy1"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:singleLine="true"
+                    android:textSize="14sp">
+
+                </com.visirx.patient.customview.NormalFont>
+
+                <com.visirx.patient.customview.NormalFont
+                    android:id="@+id/Reserved"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/policy2"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:singleLine="true"
+                    android:visibility="gone"
+                    android:text="Copyright 2015-16, All Right Reserved"
+                    android:textSize="14sp"/>
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/help_navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/header"
+        app:itemTextColor="@color/Navigation_text"
+        app:menu="@menu/drawer"/>
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/dashboard"
+            android:checked="false"
+            android:icon="@drawable/ic_home"
+            android:title="@string/dashboard"/>
+
+        <item
+            android:id="@+id/MyProfile"
+            android:checked="false"
+            android:icon="@drawable/ic_profile"
+            android:title="@string/MyProfile"/>
+
+        <item
+            android:id="@+id/BookApt"
+            android:checked="false"
+            android:icon="@drawable/ic_bookappoint"
+            android:title="@string/Bookapt"/>
+
+        <item
+            android:id="@+id/addDocotor"
+            android:checked="false"
+            android:icon="@drawable/ic_adddoctor"
+            android:title="@string/addDoctor"/>
+
+
+        <item
+            android:id="@+id/Help"
+            android:checked="false"
+            android:icon="@drawable/ic_supportteam"
+            android:title="@string/help"/>
+
+
+        <item
+            android:id="@+id/version"
+            android:checked="false"
+            android:icon="@drawable/ic_version"
+            android:title="@string/version"/>
+
+
+        <item
+            android:id="@+id/logout"
+            android:checked="false"
+            android:icon="@drawable/ic_logout"
+            android:title="@string/logout"/>
+
+
+    </group>
+</menu>

@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <RelativeLayout
+        android:id="@+id/patient_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/White"
+        android:paddingLeft="10dp" >
+
+        <com.visirx.paramedic_and.customview.NunitoTextView
+            android:id="@+id/textAppt_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/appointment_id_" />
+
+        <com.visirx.paramedic_and.customview.NunitoTextView
+            android:id="@+id/textApptID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/textAppt_header"
+            android:text="2635232" />
+
+        <com.visirx.paramedic_and.customview.NunitoTextView
+            android:id="@+id/textVisirx_Header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textAppt_header"
+            android:text="@string/visirx_id_" />
+
+        <com.visirx.paramedic_and.customview.NunitoTextView
+            android:id="@+id/textVisirxID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textAppt_header"
+            android:layout_toRightOf="@+id/textVisirx_Header"
+            android:text="3243243" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/fileNameHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/patient_header"  >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="File Name : " />
+
+        <com.visirx.paramedic_and.customview.ActionEditText
+            android:id="@+id/textFileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter the file name"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageEMR"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/savePresc_linear"
+        android:layout_below="@+id/fileNameHeader"  />
+
+
+    <LinearLayout
+        android:id="@+id/savePresc_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/saveImage"
+            style="android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/background_visirx"
+            android:text="@string/save"
+            android:onClick="SaveImage" />
+
+        <Button
+            android:id="@+id/cancelImage"
+            style="android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/cancel"
+            android:text="@string/cancel"
+            android:onClick="CancelImage" />
+
+    </LinearLayout>
+
+</RelativeLayout>

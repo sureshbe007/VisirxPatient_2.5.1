@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/drawer"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/layout_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/White"
+        tools:context="com.visirx.patient.activity.MyProfileActivity">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/my_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="?attr/colorPrimary"
+            android:elevation="6dp"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/toolbarsavebtn"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:textColor="@color/Button_Text_Color"
+                android:textSize="18sp"/>
+        </android.support.v7.widget.Toolbar>
+
+        <ScrollView
+            android:id="@+id/my_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/my_toolbar"
+            android:paddingBottom="15dp">
+
+            <RelativeLayout
+                android:id="@+id/My_Image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_toolbar"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/list_avatar"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/profile"
+                    app:border_color="@color/CircleImage_Color"/>
+
+
+                <com.visirx.patient.customview.MediumFont
+                    android:id="@+id/txtmy_firstName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/list_avatar"
+                    android:layout_marginTop="25dp"
+                    android:text="First Name *"
+                    android:textColor="@color/tripTableHeader"
+                    android:textSize="14sp"/>
+
+                <EditText
+                    android:id="@+id/etxtmy_firstName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtmy_firstName"
+                    android:background="@drawable/edittext_bottom_line"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:paddingLeft="3dp"
+                    android:textColor="@color/tripTableHeader"
+                    android:textSize="15sp"/>
+
+                <com.visirx.patient.customview.MediumFont
+                    android:id="@+id/txtmy_secondName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/etxtmy_firstName"
+                    android:text="Last Name *"
+                    android:textColor="@color/tripTableHeader"
+                    android:textSize="14sp"/>
+
+                <EditText
+                    android:id="@+id/etxtmy_secodName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtmy_secondName"
+                    android:background="@drawable/edittext_bottom_line"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:paddingLeft="3dp"
+                    android:textColor="@color/tripTableHeader"
+                    android:textSize="15sp"/>
+
+                <com.visirx.patient.customview.MediumFont
+                    android:id="@+id/txtmy_Email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/etxtmy_secodName"
+                    android:text="Email Address * "
+                    android:textColor="@color/tripTableHeader"
+                    android:textSize="14sp"/>
+
+                <EditText
+                    android:id="@+id/etxtmy_Email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtmy_Email"
+                    android:background="@drawable/edittext_bottom_line"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/tripTableHeader"
+                    android:textSize="15sp"/>
+
+                <com.visirx.patient.customview.MediumFont
+                    android:id="@+id/txtmy_Mobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/etxtmy_Email"
+                    android:text="Mobile Number *"
+                    android:textColor="@color/tripTableHeader"
+                    android:textSize="14sp"/>
+
+                <EditText
+                    android:id="@+id/etxtmy_Mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtmy_Mobile"
+                    android:background="@drawable/edittext_bottom_line"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:nextFocusDown="@id/image_dataofBirth"
+                    android:paddingLeft="3dp"
+                    android:textColor="@color/tripTableHeader"
+                    android:textSize="15sp"/>
+
+                <com.visirx.patient.customview.MediumFont
+                    android:id="@+id/txtmy_dataogBirth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/etxtmy_Mobile"
+                    android:layout_marginTop="1dp"
+                    android:padding="1dp"
+                    android:text="Date of Birth *"
+                    android:textColor="@color/tripTableHeader"
+                    android:textSize="14sp"/>
+
+                <EditText
+                    android:id="@+id/etxtmy_dataofBirth"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtmy_dataogBirth"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/tripleview_roundedborder"
+                    android:focusable="false"
+                    android:imeOptions="actionNext"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/tripTableHeader"
+                    android:textSize="15sp"/>
+
+                <ImageView
+                    android:id="@+id/image_dataofBirth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/etxtmy_dataofBirth"
+                    android:layout_below="@+id/txtmy_dataogBirth"
+                    android:layout_marginLeft="3dp"
+                    android:layout_toRightOf="@+id/etxtmy_dataofBirth"
+                    android:background="@drawable/ic_action_calendar_month"
+                    android:onClick="dateOfBirth"
+                    />
+
+
+                <com.visirx.patient.customview.MediumFont
+                    android:id="@+id/txtmy_Gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/etxtmy_Mobile"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="55dp"
+                    android:layout_marginTop="1dp"
+                    android:text="Gender *"
+                    android:textColor="@color/tripTableHeader"
+                    android:textSize="14sp"/>
+
+                <RadioGroup
+                    android:id="@+id/btnmy_gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/txtmy_Gender"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/btnmal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/btnValkin"
+                        android:background="@drawable/rbtn_selector"
+                        android:button="@null"
+                        android:checked="true"
+                        android:gravity="center"
+                        android:padding="4dp"
+                        android:text="MALE"
+                        android:textColor="@drawable/rbtn_textcolor_selector"/>
+
+                    <RadioButton
+                        android:id="@+id/btnfemale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/rbtn_selector"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:padding="4dp"
+                        android:text="FEMALE"
+                        android:textColor="@drawable/rbtn_textcolor_selector"/>
+
+                </RadioGroup>
+
+                <com.visirx.patient.customview.MediumFont
+                    android:id="@+id/txtmy_address1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btnmy_gender"
+                    android:text="Address 1 *"
+                    android:textColor="@color/tripTableHeader"
+                    android:textSize="14sp"/>
+
+                <EditText
+                    android:id="@+id/Etxtmy_address1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtmy_address1"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/edittext_bottom_line"
+                    android:gravity="top|left"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:maxLength="100"
+                    android:padding="4dp"
+                    android:paddingLeft="3dp"
+                    android:textColor="@color/tripTableHeader"
+                    android:textSize="15sp"/>
+
+                <com.visirx.patient.customview.MediumFont
+                    android:id="@+id/txtmy_address2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Etxtmy_address1"
+                    android:text="Address 2 "
+                    android:textColor="@color/tripTableHeader"
+                    android:textSize="14sp"/>
+
+                <EditText
+                    android:id="@+id/Etxtmy_address2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtmy_address2"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/edittext_bottom_line"
+                    android:gravity="top|left"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:maxLength="100"
+                    android:padding="4dp"
+                    android:paddingLeft="3dp"
+                    android:textColor="@color/tripTableHeader"
+                    android:textSize="15sp"/>
+
+                <com.visirx.patient.customview.MediumFont
+                    android:id="@+id/txtmy_address3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Etxtmy_address2"
+                    android:text="Address 3 "
+                    android:textColor="@color/tripTableHeader"
+                    android:textSize="14sp"/>
+
+                <EditText
+                    android:id="@+id/Etxtmy_address3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtmy_address3"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/edittext_bottom_line"
+                    android:gravity="top|left"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:maxLength="100"
+                    android:padding="4dp"
+                    android:paddingLeft="3dp"
+                    android:textColor="@color/tripTableHeader"
+                    android:textSize="15sp"/>
+
+                <com.visirx.patient.customview.MediumFont
+                    android:id="@+id/txtmy_zipcode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Etxtmy_address3"
+                    android:text="Zip Code *"
+                    android:textColor="@color/tripTableHeader"
+                    android:textSize="14sp"/>
+
+                <EditText
+                    android:id="@+id/etxtmy_zipcode"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtmy_zipcode"
+                    android:layout_marginBottom="11dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/tripleview_roundedborder"
+                    android:gravity="left"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/tripTableHeader"
+                    android:textSize="15sp"/>
+
+
+                <TextView
+                    android:id="@+id/txtmy_height"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/etxtmy_zipcode"
+                    android:layout_marginTop="6dp"
+                    android:text="Height (Feet,Inches)"
+                    android:textColor="#000000"
+                    android:visibility="gone"/>
+
+                <EditText
+                    android:id="@+id/etxtmy_height"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtmy_height"
+                    android:layout_marginBottom="25dp"
+                    android:background="@drawable/rounded_border"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:paddingLeft="3dp"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/txtmy_weight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/txtmy_height"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_toRightOf="@+id/txtmy_height"
+                    android:text="Weight(kgs)"
+                    android:textColor="#000000"
+                    android:visibility="gone"/>
+
+                <EditText
+                    android:id="@+id/etxtmy_weight"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/etxtmy_height"
+                    android:layout_below="@+id/txtmy_weight"
+                    android:layout_marginLeft="25dp"
+                    android:layout_toRightOf="@+id/etxtmy_height"
+                    android:background="@drawable/rounded_border"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:paddingLeft="3dp"
+                    android:visibility="gone"/>
+
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/My_navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/header"
+        app:itemTextColor="@color/Navigation_text"
+        app:menu="@menu/drawer"/>
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <com.visirx.patient.customview.MediumFont
+        android:id="@+id/emr_attach_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_visirx"
+        android:contentDescription="@string/app_name"
+        android:gravity="left"
+        android:padding="10sp"
+        android:paddingBottom="@dimen/alert_head_bottom"
+        android:paddingLeft="@dimen/alert_head_left"
+        android:paddingTop="@dimen/alert_head_top"
+        android:text="@string/attachment_option"
+        android:textColor="@color/White" />
+
+    <LinearLayout
+        android:id="@+id/emr_camera_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/grid_border"
+        android:orientation="horizontal">
+
+        <com.visirx.patient.customview.NormalFont
+            android:id="@+id/emr_attach_camera_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/alert_dialog"
+            android:layout_margin="10dp"
+            android:drawableLeft="@drawable/ic_camera"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            />
+
+        <com.visirx.patient.customview.NormalFont
+            android:id="@+id/emr_attach_camera_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/alert_dialog"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="Take picture" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/emr_attachement_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/grid_border"
+        android:orientation="horizontal">
+
+        <com.visirx.patient.customview.NormalFont
+            android:id="@+id/emr_attach_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/alert_dialog"
+            android:layout_margin="10dp"
+            android:drawableLeft="@drawable/ic_attachment"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="" />
+
+        <com.visirx.patient.customview.NormalFont
+            android:id="@+id/emr_attach_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/alert_dialog"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/file_attachment" />
+    </LinearLayout>
+
+
+</LinearLayout>

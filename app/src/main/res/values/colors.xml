@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Need Change color code  of  this #369575 by  #369575 -->
+    <!--Patient app original Color code for ToolBar -->
+    <color name="colorPrimary">#369575</color>
+
+    <!--Patinet app Dark color code for StatusBar-->
+    <color name="offerboxcolor">#580058</color>
+    <color name="offerboxlightcolor">#990099</color>
+    <color name="colorPrimaryDark">#2f8367</color>
+    <color name="clickevent">#69c9a9</color>
+    <color name="colorAccent11111111">#FF4081</color>
+    <color name="colorAccent">#369575</color>
+    <color name="PrimaryColor">#369575</color>
+    <color name="transparent">#00000000</color>
+    <color name="gray">#ff666666</color>
+    <color name="White">#FFFFFF</color>
+    <color name="gray_light">#c5c5c5</color>
+    <color name="actionBarBackground1">#369575</color>
+    <color name="DoctorSearch">#e6e6e6</color>
+    <color name="dashBoardInfo">#369575</color>
+    <color name="background_visirx">#369575</color>
+    <color name="addNote">#369575</color>
+    <color name="call">#369575</color>
+    <color name="cancelapt">#369575</color>
+    <color name="actionBarBackground">#369575</color>
+    <color name="emrData">#369575</color>
+    <color name="notesData">#369575</color>
+    <color name="prescriptionData">#369575</color>
+    <color name="notesColor">#369575</color>
+
+    <!--   Patient App Color Code  3-2-2016 -->
+    <color name="cancel">#f73636</color>
+    <color name="emrInfo">#00796b</color>
+    <color name="Button_Color">#369575</color>
+    <color name="Button_Text_Color">#FFF</color>
+    <color name="Link_Text_Color">#369575</color>
+    <color name="appointbasefragment_tabBackground">#FFF</color>
+    <color name="appointbasefragment_tabtextcolor">#369575</color>
+    <color name="patient_Orignai_color">#359472</color>
+    <color name="CircleImage_Color">#359472</color>
+    <color name="Navigation_text">#000000</color>
+
+    <!--  EMR Color Code  -->
+    <color name="lightgrey">#f1f1f1</color>
+    <color name="mediumgrey">#c0c0c0</color>
+    <string name="Rs">\u20B9</string>
+
+    <!--  ADD Doctor Enabled and Disabled -->
+    <color name="Button_Enable">#369575</color>
+    <color name="Button_disable">#2f8367</color>
+
+    // Doctorapp Garay Color Code
+
+    <color name="gray_lightdoc">#c5c5c5</color>
+    <color name="silver">#C0C0C0</color>
+    <color name="tripTableHeader">#808080</color>
+</resources>

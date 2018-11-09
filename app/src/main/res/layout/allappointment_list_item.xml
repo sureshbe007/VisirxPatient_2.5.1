@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    android:id="@+id/card_view"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="9dp"
+    android:layout_marginRight="9dp"
+    android:background="@color/patient_Orignai_color"
+    android:foreground="?attr/selectableItemBackground"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/doctorImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/list_avatar1"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="45dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/profile"
+            app:border_color="@color/CircleImage_Color"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/appointInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="clip_horizontal"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/doctorImage"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <com.visirx.patient.customview.MediumFont
+            android:id="@+id/Doctorname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:text=""
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textColor="@color/tripTableHeader"
+            android:textSize="15sp"/>
+
+        <com.visirx.patient.customview.MediumFont
+            android:id="@+id/appoint_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/Doctorname"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textColor="@color/tripTableHeader"
+            android:textSize="15sp"/>
+
+
+        <com.visirx.patient.customview.NormalFont
+            android:id="@+id/Dsecription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Doctorname"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="3dp"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textColor="@color/tripTableHeader"
+            android:textSize="13sp"/>
+
+
+        <com.visirx.patient.customview.NormalFont
+            android:id="@+id/Specialist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Dsecription"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="3dp"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textColor="@color/tripTableHeader"
+            android:textSize="13sp"/>
+
+
+        <com.visirx.patient.customview.NormalFont
+            android:id="@+id/DocotrID1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Specialist"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="3dp"
+            android:text="@string/ID"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textColor="@color/tripTableHeader"
+            android:textSize="13sp"/>
+
+        <com.visirx.patient.customview.NormalFont
+            android:id="@+id/DocotrID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/DocotrID1"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/DocotrID1"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textColor="@color/tripTableHeader"
+            android:textSize="13sp"/>
+
+        <com.visirx.patient.customview.NormalFont
+            android:id="@+id/AppointID1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/DocotrID1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="3dp"
+            android:text="Appointment ID:"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textColor="@color/tripTableHeader"
+            android:textSize="13sp"/>
+
+        <com.visirx.patient.customview.NormalFont
+            android:id="@+id/appointID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/AppointID1"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/AppointID1"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textColor="@color/tripTableHeader"
+            android:textSize="13sp"/>
+
+        <com.visirx.patient.customview.NormalFont
+            android:id="@+id/AppointDate1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/AppointID1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="3dp"
+            android:text="Date:"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textColor="@color/tripTableHeader"
+            android:textSize="13sp"/>
+
+        <com.visirx.patient.customview.NormalFont
+            android:id="@+id/AppointDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/AppointDate1"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/AppointDate1"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textColor="@color/tripTableHeader"
+            android:textSize="13sp"/>
+
+        <com.visirx.patient.customview.NormalFont
+            android:id="@+id/AppointTime1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/AppointDate1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="3dp"
+            android:text=""
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textColor="@color/tripTableHeader"
+            android:textSize="13sp"/>
+
+
+        <com.visirx.patient.customview.NormalFont
+            android:id="@+id/AppointTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/AppointTime1"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/AppointTime1"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textColor="@color/tripTableHeader"
+            android:textSize="13sp"/>
+
+        <com.visirx.patient.customview.MediumFont
+            android:id="@+id/Appointtype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/appoint_name"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textColor="@color/tripTableHeader"
+            android:textSize="13sp"/>
+
+        <com.visirx.patient.customview.NormalFont
+            android:id="@+id/Appointstatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/Dsecription"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textColor="@color/tripTableHeader"
+            android:textSize="13sp"/>
+
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/AppointTime"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="55dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/buttonshape"
+            android:text="Cancel"
+            android:textColor="@color/White"
+            android:textSize="12sp"/>
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

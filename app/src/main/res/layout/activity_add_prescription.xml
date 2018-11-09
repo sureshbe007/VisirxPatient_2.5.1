@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.visirx.patient.activity.AddPrescriptionActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_height="match_parent">
+        <!--<RelativeLayout-->
+        <!--android:id="@+id/patient_header"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:background="@color/White"-->
+        <!--android:padding="10dp">-->
+
+        <!--<com.visirx.customview.NormalFont-->
+        <!--android:id="@+id/textAppt_header"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:text="0" />-->
+
+        <!--<com.visirx.customview.NormalFont-->
+        <!--android:id="@+id/textApptID"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_toRightOf="@+id/textAppt_header"-->
+        <!--android:text="2635232" />-->
+
+        <!--<com.visirx.customview.NormalFont-->
+        <!--android:id="@+id/textVisirx_Header"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/textAppt_header"-->
+        <!--android:text="V00001" />-->
+
+        <!--<com.visirx.customview.NormalFont-->
+        <!--android:id="@+id/textVisirxID"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/textAppt_header"-->
+        <!--android:layout_toRightOf="@+id/textVisirx_Header"-->
+        <!--android:text="3243243" />-->
+        <!--</RelativeLayout>-->
+
+
+
+
+        <!--<com.visirx.patient.customview.TouchImageView-->
+            <!--android:id="@+id/imagePrescription"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:layout_above="@+id/savePresc_linear"-->
+            <!--android:layout_below="@+id/lytpatientid"-->
+            <!--android:layout_margin="@dimen/margin_low"-->
+            <!--android:scrollbars="vertical" />-->
+        <android.support.v4.view.ViewPager
+            android:id="@+id/patient_presViewPager"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/savePresc_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/savePrescription"
+                style="android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/background_visirx"
+                android:onClick="SavePrescription"
+                android:text="@string/save" />
+
+            <Button
+                android:id="@+id/cancelPrescription"
+                style="android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/cancel"
+                android:onClick="CancelPrescription"
+                android:text="@string/cancel" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

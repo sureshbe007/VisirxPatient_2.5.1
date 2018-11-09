@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id = "@+id/fragmentIncomeCall"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/infoAboutCall"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop = "true">
+
+        <TextView
+            android:id="@+id/incVideoCall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/grey"
+            android:textStyle="bold"
+            android:text="@string/incoming_video_call"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_marginTop="46dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+        <TextView
+            android:id="@+id/incAudioCall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/grey"
+            android:textStyle="bold"
+            android:text="@string/incoming_audio_call"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_marginTop="46dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/callerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/incAudioCall"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/buttonshape"
+            android:gravity="center_vertical|center_horizontal"
+            android:maxLength="25"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:text="Doctor Calling"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/alsoOnCall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/grey"
+            android:textStyle="bold"
+            android:text=""
+            android:layout_below="@+id/callerName"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/otherIncUsers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/grey"
+            android:textStyle="bold"
+            android:text=""
+            android:layout_below="@+id/alsoOnCall"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="28dp">
+
+    <ImageButton
+        android:id="@+id/rejectBtn"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:src="@drawable/call_white"
+        android:background="@drawable/callendbutton_round"
+        android:layout_alignParentLeft="true"/>
+
+    <ImageButton
+        android:id="@+id/takeBtn"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:src="@drawable/call_white"
+        android:background="@drawable/callbutton_green"
+        android:gravity="center_vertical"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

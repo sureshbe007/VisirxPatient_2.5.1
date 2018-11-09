@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Button_Text_Color"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/Bookparent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/Button_Text_Color"
+        tools:context=".activity.BookAppointActivity">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/bookappoint_toolbar1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="?attr/colorPrimary"
+            android:elevation="6dp"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+        <ScrollView
+            android:id="@+id/parentScroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/bookappoint_toolbar1"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/symptoms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <com.visirx.patient.customview.MediumFont
+                        android:id="@+id/TxtsymptomsHead"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_marginLeft="25dp"
+                        android:text="Symptoms *"
+                        android:textColor="@color/tripTableHeader"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/EtxtsymptomsHead"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/TxtsymptomsHead"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/rounded_border"
+                        android:gravity="top|left"
+                        android:hint="Symptom 1"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:maxLength="35"
+                        android:padding="5dp"
+                        android:textColor="@color/tripTableHeader"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/EtxtsymptomsHead2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/EtxtsymptomsHead"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/rounded_border"
+                        android:gravity="top|left"
+                        android:hint="Symptom 2"
+                        android:imeOptions="actionDone"
+                        android:inputType="text"
+                        android:maxLength="35"
+                        android:nextFocusForward="@id/btnVertiual"
+                        android:padding="5dp"
+                        android:paddingRight="2dp"
+                        android:textColor="@color/tripTableHeader"
+                        android:textSize="15sp"
+                        android:visibility="visible" />
+
+                    <LinearLayout
+                        android:id="@+id/vg_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/EtxtsymptomsHead2"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <com.visirx.patient.customview.NormalFont
+                                android:id="@+id/TxtModeofConsult"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/EtxtsymptomsHead2"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="25dp"
+                                android:text="Mode of Consult *"
+                                android:textColor="@color/tripTableHeader"
+                                android:textSize="13sp" />
+
+                            <com.visirx.patient.customview.NormalFont
+                                android:id="@+id/txtConsulthelp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginTop="8dp"
+                                android:text="Virtual consult help you consult doctor from your place"
+                                android:textColor="@color/tripTableHeader"
+                                android:textSize="11sp" />
+
+                        </LinearLayout>
+
+                        <RadioGroup
+                            android:id="@+id/radioGroup11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/btnVertiual"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/rbtn_selector"
+                                android:button="@null"
+                                android:checked="true"
+                                android:gravity="center"
+                                android:padding="10dp"
+                                android:text="Virtual"
+                                android:textColor="@drawable/rbtn_textcolor_selector" />
+
+                            <RadioButton
+                                android:id="@+id/btnValkin"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dp"
+                                android:background="@drawable/rbtn_selector"
+                                android:button="@null"
+                                android:enabled="false"
+                                android:gravity="center"
+                                android:padding="10dp"
+                                android:text="Walkin"
+                                android:textColor="@drawable/rbtn_textcolor_selector"
+                                android:visibility="gone" />
+
+                        </RadioGroup>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/date_vg_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/vg_1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/etxtmy_dataofBirth"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/rounded_border"
+                            android:focusable="false"
+                            android:hint="Select appointment Date"
+                            android:imeOptions="actionNext"
+                            android:padding="5dp"
+                            android:textColor="@color/tripTableHeader"
+                            android:textSize="12sp" />
+
+                        <ImageView
+                            android:id="@+id/image_dataofBirth"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ic_action_calendar_month"
+                            android:contentDescription="@string/description"
+                            android:onClick="datePicker" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/date_vg_2"
+                        android:gravity="center">
+
+                        <com.visirx.patient.customview.NormalFont
+                            android:id="@+id/dispalymsg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Please select appointment date"
+                            android:textColor="@color/tripTableHeader"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+
+                    <com.visirx.patient.customview.NormalFont
+                        android:id="@+id/selecteddate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/date_vg_2"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="@dimen/margin_low"
+                        android:textColor="@color/tripTableHeader"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <com.visirx.patient.customview.NormalFont
+                        android:id="@+id/timeslotLable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/date_vg_2"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="@dimen/margin_low"
+                        android:layout_toRightOf="@+id/selecteddate"
+                        android:textColor="@color/tripTableHeader"
+                        android:textSize="@dimen/text_size_large"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/timeslotLable"
+                        android:gravity="center">
+
+                        <com.visirx.patient.customview.NormalFont
+                            android:id="@+id/ToeknSystem"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ic_token"
+                            android:gravity="center"
+                            android:textColor="@color/Button_Text_Color"
+                            android:textSize="18sp"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+
+                    <GridView
+                        android:id="@+id/grid_timeslot"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/selecteddate"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="10dp"
+                        android:numColumns="3"
+                        android:padding="@dimen/margin_tiny"
+                        android:verticalSpacing="10dp"
+                        android:visibility="gone" />
+
+
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/conformappoint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/mybutton_graylight"
+                    android:enabled="false"
+                    android:text="BOOK APPOINTMENT"
+                    android:textColor="@color/Button_Text_Color" />
+            </LinearLayout>
+
+
+        </ScrollView>
+    </RelativeLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/book_navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/header"
+        app:itemTextColor="@color/Navigation_text"
+        app:menu="@menu/drawer" />
+</android.support.v4.widget.DrawerLayout>

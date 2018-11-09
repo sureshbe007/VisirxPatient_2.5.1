@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.visirx.PatientDetails">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            tools:context="com.visirx.PatientDetails"
+            tools:showIn="@layout/activity_patient_details">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <com.visirx.patient.customview.MediumFont
+                                android:id="@+id/lblTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginLeft="@dimen/margin_low"
+                                android:layout_marginTop="@dimen/margin_low"
+                                android:text="@string/patient_summary"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="@dimen/text_size_large"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="horizontal">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/margin_low"
+                                android:layout_marginTop="@dimen/margin_low">
+
+                                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                                    android:id="@+id/profile_image"
+                                    style="@style/profile_img"
+                                    android:src="@drawable/profile"
+                                    app:border_color="#FF000000" />
+
+                            </RelativeLayout>
+
+                            <LinearLayout
+                                android:layout_marginTop="3dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/margin_low"
+                                android:orientation="vertical">
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/margin_low"
+                                    android:layout_marginTop="@dimen/margin_low"
+                                    android:layout_toRightOf="@+id/layout_image">
+
+                                    <com.visirx.patient.customview.NormalFont
+                                        android:id="@+id/patient_name"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentTop="true"
+                                        android:text="@string/patient_name"
+                                        android:textSize="@dimen/text_size_medium"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/lblTime"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignBaseline="@+id/patient_name"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_marginRight="@dimen/margin_low"
+                                        android:layout_toRightOf="@+id/patient_name"
+                                        android:gravity="right"
+                                        android:text="@string/time"
+                                        android:visibility="invisible" />
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/margin_low"
+                                    android:layout_marginTop="@dimen/margin_tiny">
+
+                                    <com.visirx.patient.customview.NormalFont
+                                        android:id="@+id/lblVisirxID"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentTop="true"
+                                        android:text="@string/visirx_id"
+                                        android:textSize="@dimen/text_size_medium" />
+
+                                    <com.visirx.patient.customview.NormalFont
+                                        android:id="@+id/visirx_id"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_marginLeft="@dimen/margin_tiny"
+                                        android:layout_toRightOf="@+id/lblVisirxID"
+                                        android:text="@string/visirx_id_num"
+                                        android:textSize="@dimen/text_size_medium" />
+
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/margin_low"
+                                    android:layout_marginTop="@dimen/margin_tiny">
+
+                                    <com.visirx.patient.customview.NormalFont
+                                        android:visibility="invisible"
+                                        android:id="@+id/person_age"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentTop="true"
+                                        android:text="@string/patient_age"
+                                        android:textSize="@dimen/text_size_medium" />
+
+                                    <TextView
+                                        android:visibility="invisible"
+                                        android:id="@+id/lblComma"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_toRightOf="@+id/person_age"
+                                        android:text=","
+                                        android:textSize="@dimen/text_size_medium" />
+
+                                    <com.visirx.patient.customview.NormalFont
+                                        android:visibility="invisible"
+                                        android:id="@+id/person_gender"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_marginLeft="@dimen/margin_tiny"
+                                        android:layout_toRightOf="@+id/lblComma"
+                                        android:text="@string/female"
+                                        android:textSize="@dimen/text_size_medium" />
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/mediumgrey" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <com.visirx.patient.customview.MediumFont
+                                android:id="@+id/lblSymptoms"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/margin_low"
+                                android:layout_marginTop="@dimen/margin_low"
+                                android:text="@string/symptoms"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="@dimen/text_size_large"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/margin_low"
+                                android:layout_toRightOf="@+id/layout_disease">
+
+                                <com.visirx.patient.customview.NormalFont
+                                    android:id="@+id/symt_content"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/symptoms_details"
+                                    android:textSize="@dimen/text_size_medium" />
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/mediumgrey" />
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <com.visirx.patient.customview.MediumFont
+                                android:id="@+id/lblAddress"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginLeft="@dimen/margin_low"
+                                android:layout_marginTop="@dimen/margin_low"
+                                android:text="@string/address_caps"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="@dimen/text_size_large"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <com.visirx.patient.customview.NormalFont
+                                android:id="@+id/addr_content"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/margin_low"
+                                android:textSize="@dimen/text_size_medium" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/mediumgrey" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/apt_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="gone"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <com.visirx.patient.customview.MediumFont
+                                android:id="@+id/lblAppointmentHistory"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginLeft="@dimen/margin_low"
+                                android:layout_marginTop="@dimen/margin_low"
+                                android:text="@string/appointment_history"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="@dimen/text_size_large"
+                                android:textStyle="bold" />
+
+                            <com.visirx.patient.customview.NormalFont
+                                android:id="@+id/view_all_apt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginRight="@dimen/margin_low"
+                                android:layout_marginTop="@dimen/margin_low"
+                                android:gravity="right"
+                                android:text="@string/view_all_history"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="@dimen/text_size_large" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/margin_low"
+                            android:orientation="vertical">
+
+                            <ListView
+                                android:id="@+id/appt_hist_listview"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/mediumgrey" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <com.visirx.patient.customview.MediumFont
+                            android:id="@+id/lblNurseDetails"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="@dimen/margin_low"
+                            android:layout_marginTop="@dimen/margin_low"
+                            android:text="@string/nurse_details"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/text_size_large"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/margin_low"
+                            android:layout_marginTop="@dimen/margin_low">
+
+                            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                                android:visibility="gone"
+                                android:id="@+id/nurse_photo"
+                                style="@style/profile_img"
+                                android:src="@drawable/profile"
+                                app:border_color="#FF000000" />
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/margin_low"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/margin_low"
+                                android:layout_marginTop="@dimen/margin_low"
+                                android:visibility="gone"
+                                android:layout_toRightOf="@+id/layout_image">
+
+                                <com.visirx.patient.customview.MediumFont
+                                    android:id="@+id/nurse_name"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentTop="true"
+                                    android:text="@string/paramedic_status"
+                                    android:textSize="@dimen/text_size_medium"
+                                    android:textStyle="bold" />
+
+                                <ImageView
+                                    android:visibility="gone"
+                                    android:id="@+id/calltoParamedic"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginLeft="100dp"
+                                    android:layout_marginStart="97dp"
+                                    android:layout_toRightOf="@+id/nurse_name"
+                                    android:gravity="right"
+                                    android:src="@drawable/cal" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/margin_low"
+                                android:layout_marginTop="@dimen/margin_tiny">
+
+                                <com.visirx.patient.customview.NormalFont
+                                    android:visibility="gone"
+                                    android:id="@+id/nvx_id"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentTop="true"
+                                    android:text=""
+                                    android:textSize="@dimen/text_size_medium" />
+
+                                <com.visirx.patient.customview.NormalFont
+                                    android:visibility="gone"
+                                    android:id="@+id/nursevisirx_id"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_marginLeft="@dimen/margin_tiny"
+                                    android:layout_toRightOf="@+id/nvx_id"
+                                    android:text=""
+                                    android:textSize="@dimen/text_size_medium" />
+
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/margin_low"
+                                android:layout_marginTop="@dimen/margin_tiny">
+
+                                <com.visirx.patient.customview.NormalFont
+                                    android:visibility="gone"
+                                    android:id="@+id/nurse_age"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentTop="true"
+                                    android:text=""
+                                    android:textSize="@dimen/text_size_medium" />
+
+                                <com.visirx.patient.customview.NormalFont
+                                    android:visibility="gone"
+                                    android:id="@+id/lblComma2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_toRightOf="@+id/nurse_age"
+                                    android:text=","
+                                    android:textSize="@dimen/text_size_medium" />
+
+                                <com.visirx.patient.customview.NormalFont
+                                    android:visibility="gone"
+                                    android:id="@+id/nurse_gender"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_marginLeft="@dimen/margin_tiny"
+                                    android:layout_toRightOf="@+id/lblComma2"
+                                    android:text=""
+                                    android:textSize="@dimen/text_size_medium" />
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:visibility="gone"
+                        android:background="@color/mediumgrey" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+
+</android.support.design.widget.CoordinatorLayout>
